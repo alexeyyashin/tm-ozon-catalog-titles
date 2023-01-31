@@ -1,7 +1,7 @@
 # tm-ozon-catalog-titles
 A tampermonkey script that adds "title" attribute to ozon.ru catalog titles
 
-![Example](/README/img/title-screen.png)
+![Example](https://github.com/alexeyyashin/tm-ozon-catalog-titles/raw/master/README/img/title-screen.png)
 
 ## Installation
 1. Install [Tampermonkey](https://www.tampermonkey.net/) browser extension.
