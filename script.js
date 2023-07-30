@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Ozon catalog titles
 // @namespace    https://greasyfork.org/en/scripts/459192-ozon-catalog-titles
-// @version      1.1
+// @version      1.2
 // @description  Adds "title" attribute to ozon.ru catalog titles
 // @author       Alexey Yashin <me@alexey-yashin.ru>
 // @match        https://ozon.ru/*
@@ -17,7 +17,7 @@
     'use strict';
 
     setInterval(function() {
-        let titles = document.querySelectorAll('.tile-hover-target span span:not([title*=" "]), .tsBodyL span:not([title*=" "])');
+        let titles = document.querySelectorAll('.tile-hover-target span span:not([title*=" "]), .tsBodyL span:not([title*=" "]), span.tsBody500Medium:not([title*=" "])');
         for (let span of titles) {
             span.setAttribute('title', span.innerText);
         }
